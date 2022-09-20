@@ -8,6 +8,14 @@ from sklearn.linear_model import LinearRegression, LassoLars, TweedieRegressor,E
 from sklearn.preprocessing import PolynomialFeatures, MinMaxScaler, StandardScaler, RobustScaler, QuantileTransformer
 from sklearn.model_selection import GridSearchCV
 
+from sklearn.cluster import DBSCAN
+from sklearn.cluster import KMeans
+from sklearn import metrics
+from sklearn.preprocessing import StandardScaler
+from scipy.cluster.vq import kmeans2, whiten
+import random
+
+
 
 
 
@@ -953,7 +961,6 @@ def LATest(X_train,X_validate,X_test,y_train,y_validate,y_test):
 
 
     return rmseDF
-
 
 
 
